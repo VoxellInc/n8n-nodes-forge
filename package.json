@@ -1,0 +1,46 @@
+{
+  "name": "@voxell/n8n-nodes-forge",
+  "version": "0.1.0",
+  "description": "Voxell Forge embeddings (turbo/pro/ultra) for n8n — an AiEmbedding sub-node for vector stores and retrievers",
+  "license": "MIT",
+  "homepage": "https://github.com/VoxellInc/n8n-nodes-forge",
+  "author": { "name": "Voxell", "email": "support@voxell.ai" },
+  "repository": { "type": "git", "url": "git+https://github.com/VoxellInc/n8n-nodes-forge.git" },
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "n8n-nodes",
+    "forge",
+    "voxell",
+    "embeddings",
+    "vector",
+    "langchain",
+    "ai"
+  ],
+  "engines": { "node": ">=20.15" },
+  "main": "index.js",
+  "scripts": {
+    "build": "n8n-node build",
+    "dev": "n8n-node dev",
+    "lint": "n8n-node lint",
+    "lint:fix": "n8n-node lint --fix",
+    "prepublishOnly": "n8n-node prerelease"
+  },
+  "files": ["dist"],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "strict": true,
+    "credentials": ["dist/credentials/ForgeApi.credentials.js"],
+    "nodes": ["dist/nodes/EmbeddingsForge/EmbeddingsForge.node.js"]
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*",
+    "@langchain/core": "*"
+  },
+  "devDependencies": {
+    "@n8n/node-cli": "*",
+    "@langchain/core": "^0.3.80",
+    "n8n-workflow": "*",
+    "typescript": "^5.9.3"
+  }
+}
