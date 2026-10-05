@@ -34,8 +34,8 @@ automatically, for better retrieval.
 ## Measured on public documents
 
 On four public corpora, 7,817 documents and 980,885 passages in total, Voxell's retrieval pipeline
-was asked 800 questions (200 per corpus) on 2026-10-02. The first result answers the question for
-85% of them, and one of the top three results answers it for 91%. The right document is in the top
+was asked 800 questions (200 per corpus) on 2026-10-05. The first result answers the question for
+83% of them, and one of the top three results answers it for 90%. The right document is in the top
 ten for 95%. The receipts are published at [voxell.ai/retrieval](https://voxell.ai/retrieval/).
 
 By corpus:
@@ -43,10 +43,10 @@ By corpus:
 | Corpus | Documents | First result answers the question | One of the top three answers it |
 | ------ | --------- | --------------------------------- | ------------------------------- |
 | SEC filings | 2,010 | 91% | 95% |
-| USPTO patents | 4,008 | 86.5% | 92% |
-| NASA technical reports | 1,210 | 72% | 80% |
-| arXiv technical papers | 589 | 92% | 98% |
-| All four | 7,817 | 85% | 91% |
+| USPTO patents | 4,008 | 86.5% | 91.5% |
+| NASA technical reports | 1,210 | 67% | 78% |
+| arXiv technical papers | 589 | 86.5% | 96% |
+| All four | 7,817 | 83% | 90% |
 
 Read these for what they are. The questions were written by a model from the documents and judged
 against the passage text, which is easier than a test set written by people. The numbers describe
